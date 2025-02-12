@@ -1,9 +1,3 @@
-# Study-Abord-AI-Platform-
-
-Below is a sample **README.md** that you can adapt for your Study Abroad AI Assistant project. It provides an overview of the system, describes its features, and gives instructions on how to set up and run the microservices. Feel free to modify or expand any section to suit your team’s specific needs.
-
----
-
 # **Study Abroad AI Assistant**
 
 The **Study Abroad AI Assistant** is a microservices-based platform designed to help international students find suitable universities, manage their applications, and navigate complex visa processes. It combines AI-driven recommendations, a chatbot for Q&A, and application tracking features into a single, scalable solution.
