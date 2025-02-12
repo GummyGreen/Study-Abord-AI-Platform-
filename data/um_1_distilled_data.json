@@ -1,0 +1,363 @@
+[
+  {
+    "universityName": "University of California, Berkeley",
+    "ranking": 30,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 48000,
+    "rationale": "Top-tier CS program with strong ties to Silicon Valley."
+  },
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program offering hands-on industry experience."
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 40000,
+    "rationale": "Strong CS program and internship opportunities in a tech hub."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 100,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Notable co-op emphasis and robust industry partnerships."
+  },
+  {
+    "universityName": "Georgia Institute of Technology",
+    "ranking": 40,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 34000,
+    "rationale": "Highly regarded CS program with strong industry links."
+  },
+
+  {
+    "universityName": "University of California, Berkeley",
+    "ranking": 30,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 48000,
+    "rationale": "Top-tier CS program with strong ties to Silicon Valley."
+  },
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program offering hands-on industry experience."
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 40000,
+    "rationale": "Strong CS program and internship opportunities in a tech hub."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 100,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Notable co-op emphasis and robust industry partnerships."
+  },
+  {
+    "universityName": "Georgia Institute of Technology",
+    "ranking": 40,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 34000,
+    "rationale": "Highly regarded CS program with strong industry links."
+  },
+
+  {
+    "universityName": "University of California, Berkeley",
+    "ranking": 30,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 48000,
+    "rationale": "Top-tier CS program with strong ties to Silicon Valley."
+  },
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program offering hands-on industry experience."
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 40000,
+    "rationale": "Strong CS program and internship opportunities in a tech hub."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 100,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Notable co-op emphasis and robust industry partnerships."
+  },
+  {
+    "universityName": "Georgia Institute of Technology",
+    "ranking": 40,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 34000,
+    "rationale": "Highly regarded CS program with strong industry links."
+  },
+
+  {
+    "universityName": "University of California, Berkeley",
+    "ranking": 30,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 48000,
+    "rationale": "Top-tier CS program with strong ties to Silicon Valley."
+  },
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program offering hands-on industry experience."
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 40000,
+    "rationale": "Strong CS program and internship opportunities in a tech hub."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 100,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Notable co-op emphasis and robust industry partnerships."
+  },
+  {
+    "universityName": "Georgia Institute of Technology",
+    "ranking": 40,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 34000,
+    "rationale": "Highly regarded CS program with strong industry links."
+  },
+
+  {
+    "universityName": "University of California, Berkeley",
+    "ranking": 30,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 48000,
+    "rationale": "Top-tier CS program with strong ties to Silicon Valley."
+  },
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program offering hands-on industry experience."
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 40000,
+    "rationale": "Strong CS program and internship opportunities in a tech hub."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 100,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Notable co-op emphasis and robust industry partnerships."
+  },
+  {
+    "universityName": "Georgia Institute of Technology",
+    "ranking": 40,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 34000,
+    "rationale": "Highly regarded CS program with strong industry links."
+  }
+
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Co-op emphasis."
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 220,
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 25000,
+    "rationale": "Strong internship culture."
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Co-op focus."
+  },
+  {
+    "universityName": "Purdue University",
+    "ranking": 60,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 45000,
+    "rationale": "Highly regarded engineering."
+  },
+
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Co-op emphasis."
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 220,
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 25000,
+    "rationale": "Strong internship culture."
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Co-op focus."
+  },
+  {
+    "universityName": "Purdue University",
+    "ranking": 60,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 45000,
+    "rationale": "Highly regarded engineering."
+  },
+
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Co-op emphasis."
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 220,
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 25000,
+    "rationale": "Strong internship culture."
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Co-op focus."
+  },
+  {
+    "universityName": "Purdue University",
+    "ranking": 60,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 45000,
+    "rationale": "Highly regarded engineering."
+  },
+
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Co-op emphasis."
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 220,
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 25000,
+    "rationale": "Strong internship culture."
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Co-op focus."
+  },
+  {
+    "universityName": "Purdue University",
+    "ranking": 60,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 45000,
+    "rationale": "Highly regarded engineering."
+  },
+
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program."
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Co-op emphasis."
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 220,
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 25000,
+    "rationale": "Strong internship culture."
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Co-op focus."
+  },
+  {
+    "universityName": "Purdue University",
+    "ranking": 60,
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 45000,
+    "rationale": "Highly regarded engineering."
+  }
+
+]
+
