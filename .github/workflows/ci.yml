@@ -1,1 +1,49 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Check out the code from your repo
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # 2) Set up Python (you can pick a specific version or a matrix of versions)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # 3) Install dependencies and run tests for 'visa-guidance'
+      - name: Install and test visa-guidance
+        run: |
+          cd visa-guidance
+          pip install -r requirements.txt
+          # If you have a tests folder or test files, run pytest:
+          if [ -f tests/test_example.py ] || [ -d tests ]; then
+            python -m pytest --maxfail=1 --disable-warnings -q
+          else
+            echo "No tests found in visa-guidance. Skipping..."
+          fi
+          cd ..
+
+      # 4) Install dependencies and run tests for 'chatbot'
+      - name: Install and test chatbot
+        run: |
+          cd chatbot
+          pip install -r requirements.txt
+          # If you have tests for the chatbot, run them:
+          if [ -f tests/test_example.py ] || [ -d tests ]; then
+            python -m pytest --maxfail=1 --disable-warnings -q
+          else
+            echo "No tests found in chatbot. Skipping..."
+          fi
+          cd ..
 
