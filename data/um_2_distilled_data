@@ -1,0 +1,203 @@
+[
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "professionalRankings": "Top 50 (USNWR) for CS",
+    "address": "Boston, Massachusetts",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program for CS majors, popular among Chinese students.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "professionalRankings": "Top 100 (QS) for CS",
+    "address": "Rochester, New York",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Strong co-op emphasis, good international student support.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "professionalRankings": "Top 10 (USNWR) in AI",
+    "address": "Seattle, Washington",
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 40000,
+    "rationale": "Excellent internship opportunities with major tech companies.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "professionalRankings": "Top 100 (USNWR) for CS",
+    "address": "Philadelphia, Pennsylvania",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Notable co-op program, strong urban campus experience.",
+    "employmentProspects": "Medium"
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 250,
+    "professionalRankings": "Top 150 (USNWR) for CS",
+    "address": "Cincinnati, Ohio",
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 29000,
+    "rationale": "Affordable tuition and longstanding co-op tradition.",
+    "employmentProspects": "Medium"
+  }
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "professionalRankings": "Top 50 (USNWR) for CS",
+    "address": "Boston, Massachusetts",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program for CS majors, popular among Chinese students.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "professionalRankings": "Top 100 (QS) for CS",
+    "address": "Rochester, New York",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Strong co-op emphasis, good international student support.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "professionalRankings": "Top 10 (USNWR) in AI",
+    "address": "Seattle, Washington",
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 40000,
+    "rationale": "Excellent internship opportunities with major tech companies.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "professionalRankings": "Top 100 (USNWR) for CS",
+    "address": "Philadelphia, Pennsylvania",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Notable co-op program, strong urban campus experience.",
+    "employmentProspects": "Medium"
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 250,
+    "professionalRankings": "Top 150 (USNWR) for CS",
+    "address": "Cincinnati, Ohio",
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 29000,
+    "rationale": "Affordable tuition and longstanding co-op tradition.",
+    "employmentProspects": "Medium"
+  }
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "professionalRankings": "Top 50 (USNWR) for CS",
+    "address": "Boston, Massachusetts",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program for CS majors, popular among Chinese students.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "professionalRankings": "Top 100 (QS) for CS",
+    "address": "Rochester, New York",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Strong co-op emphasis, good international student support.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "professionalRankings": "Top 10 (USNWR) in AI",
+    "address": "Seattle, Washington",
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 40000,
+    "rationale": "Excellent internship opportunities with major tech companies.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "professionalRankings": "Top 100 (USNWR) for CS",
+    "address": "Philadelphia, Pennsylvania",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Notable co-op program, strong urban campus experience.",
+    "employmentProspects": "Medium"
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 250,
+    "professionalRankings": "Top 150 (USNWR) for CS",
+    "address": "Cincinnati, Ohio",
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 29000,
+    "rationale": "Affordable tuition and longstanding co-op tradition.",
+    "employmentProspects": "Medium"
+  }
+  {
+    "universityName": "Northeastern University",
+    "ranking": 180,
+    "professionalRankings": "Top 50 (USNWR) for CS",
+    "address": "Boston, Massachusetts",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 55000,
+    "rationale": "Renowned co-op program for CS majors, popular among Chinese students.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Rochester Institute of Technology",
+    "ranking": 110,
+    "professionalRankings": "Top 100 (QS) for CS",
+    "address": "Rochester, New York",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 52000,
+    "rationale": "Strong co-op emphasis, good international student support.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "University of Washington",
+    "ranking": 60,
+    "professionalRankings": "Top 10 (USNWR) in AI",
+    "address": "Seattle, Washington",
+    "acceptanceDifficulty": "High",
+    "estimatedTuition": 40000,
+    "rationale": "Excellent internship opportunities with major tech companies.",
+    "employmentProspects": "High"
+  },
+  {
+    "universityName": "Drexel University",
+    "ranking": 350,
+    "professionalRankings": "Top 100 (USNWR) for CS",
+    "address": "Philadelphia, Pennsylvania",
+    "acceptanceDifficulty": "Medium",
+    "estimatedTuition": 54000,
+    "rationale": "Notable co-op program, strong urban campus experience.",
+    "employmentProspects": "Medium"
+  },
+  {
+    "universityName": "University of Cincinnati",
+    "ranking": 250,
+    "professionalRankings": "Top 150 (USNWR) for CS",
+    "address": "Cincinnati, Ohio",
+    "acceptanceDifficulty": "Low",
+    "estimatedTuition": 29000,
+    "rationale": "Affordable tuition and longstanding co-op tradition.",
+    "employmentProspects": "Medium"
+  }
+]
+
