@@ -134,7 +134,7 @@ study-abroad-ai-assistant/
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/<your-org>/study-abroad-ai-assistant.git
+   git clone 
    cd study-abroad-ai-assistant
    ```
 
@@ -283,6 +283,6 @@ This project is licensed under the [MIT License](./LICENSE). You’re free to us
 ### **Contact & Support**
 
 - If you have questions or want to discuss features, please open an **Issue** in this repo.  
-- For direct inquiries, email the core team at [example@studyabroadai.com](mailto:example@studyabroadai.com).
+- For direct inquiries, email the core team at [InternUp@studyabroadai.com](mailto:InternUp@studyabroadai.com).
 
 _Thanks for checking out the Study Abroad AI Assistant! We hope it helps streamline your international study journey._
