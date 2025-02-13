@@ -15,100 +15,122 @@
 #  - Integrate GPT (e.g., via OpenAI API) and pass relevant data as prompts.
 #  - Use a templating engine or a specialized library for text generation.
 
-import os
-import json
 from flask import Flask, request, jsonify
+import openai
+import pymongo
 
 app = Flask(__name__)
 
-# Adjust the path to match your local folder structure
-DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'distilled_data.json')
+# Configure OpenAI GPT API
+openai.api_key = "YOUR_OPENAI_API_KEY"
 
-def load_distilled_data():
-    """
-    Load the distilled dataset (10 or so records) from a local JSON file.
-    Returns a list of dictionaries, each representing a student's info.
-    """
-    with open(DATA_PATH, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return data
+# MongoDB connection for fetching university-specific requirements
+client = pymongo.MongoClient("mongodb://localhost:27017/")
+db = client["university_database"]
+university_collection = db["universities"]
 
-# Load the dataset once at startup
-DISTILLED_DATA = load_distilled_data()
+# Sample stateful conversation storage (to be replaced with a more robust solution in production)
+session_state = {}
 
-@app.route('/generate-sop', methods=['POST'])
-def generate_sop():
-    """
-    POST /generate-sop
-    Expects a JSON body, e.g.:
-      {
-        "student_id": 1,
-        "additional_goals": "I want to focus on machine learning.",
-        "target_program": "M.S. in Computer Science at XYZ University"
-      }
+@app.route('/start-sop-conversation', methods=['POST'])
+def start_sop_conversation():
+    """Initialize the SOP drafting process."""
+    student_id = request.json.get("student_id")
+    university_name = request.json.get("university_name")
+    
+    # Fetch university-specific background and requirements
+    university = university_collection.find_one({"name": {"$regex": f"^{university_name}$", "$options": "i"}})
+    
+    if not university:
+        return jsonify({"message": f"University '{university_name}' not found in our database."}), 404
+    
+    session_state[student_id] = {
+        "university_name": university_name,
+        "university_requirements": university.get("requirements", "General SOP requirements."),
+        "conversation_history": []
+    }
+    
+    question = "Let's begin drafting your SOP. To start, tell me about your academic background and major achievements."
+    session_state[student_id]["conversation_history"].append({"role": "assistant", "content": question})
+    
+    return jsonify({"message": question})
 
-    Returns a naive SOP draft in JSON:
-      {
-        "sop_draft": "...multi-paragraph text..."
-      }
-    """
-    data = request.get_json(force=True)
-
-    student_id = data.get('student_id')
-    additional_goals = data.get('additional_goals', '')
-    target_program = data.get('target_program', '')
-
-    # Find the matching student record in the loaded dataset
-    student_record = None
-    for record in DISTILLED_DATA:
-        if record.get('student_id') == student_id:
-            student_record = record
-            break
-
-    if not student_record:
-        return jsonify({
-            "error": f"No student found with student_id={student_id}"
-        }), 404
-
-    # Retrieve info from the student's record
-    undergrad_univ = student_record.get('undergrad_university', 'Unknown University')
-    major = student_record.get('major', 'Undeclared Major')
-    gpa = student_record.get('GPA', 0.0)
-    sop_excerpt = student_record.get('SoP_excerpt', '')
-    location_pref = student_record.get('location_preference', '')
-
-    # Construct a naive SOP draft
-    sop_draft = (
-        f"Statement of Purpose (Draft)\n\n"
-        f"Introduction:\n"
-        f"I am a graduate of {undergrad_univ}, where I studied {major} and achieved a GPA of {gpa}. "
-        f"My academic journey has been shaped by a persistent curiosity and a drive to explore "
-        f"the leading frontiers of my field. {sop_excerpt}\n\n"
-
-        f"Motivation and Goals:\n"
-        f"I am applying to {target_program or 'your esteemed graduate program'} to deepen my expertise "
-        f"in {major} and further hone my research capabilities. {additional_goals}\n\n"
-
-        f"Why This Program:\n"
-        f"I believe that the location preference of {location_pref} in the United States offers an "
-        f"excellent environment for both academic success and cultural enrichment. "
-        f"Through engagement with diverse peers and faculty, I hope to cultivate new perspectives "
-        f"and innovative approaches.\n\n"
-
-        f"Future Plans:\n"
-        f"My post-graduate aspiration is to leverage the knowledge and experience gained from this "
-        f"program and make meaningful contributions in my field. Whether in industry or academia, "
-        f"I aim to build upon the foundation established at {undergrad_univ}, and I am confident "
-        f"that by attending this graduate program, I will be one step closer to achieving "
-        f"my long-term goals.\n\n"
-
-        f"Conclusion:\n"
-        f"Thank you for considering my application. I look forward to the opportunity to further "
-        f"discuss how my background, passion, and goals align with the values of your institution.\n"
+@app.route('/continue-sop-conversation', methods=['POST'])
+def continue_sop_conversation():
+    """Continue the SOP drafting conversation."""
+    student_id = request.json.get("student_id")
+    student_response = request.json.get("student_response")
+    
+    if student_id not in session_state:
+        return jsonify({"message": "No active SOP drafting session found. Please start a new session."}), 400
+    
+    session_state[student_id]["conversation_history"].append({"role": "student", "content": student_response})
+    
+    # Generate AI-driven follow-up or partial SOP draft based on the conversation history
+    conversation_history = session_state[student_id]["conversation_history"]
+    prompt = create_prompt(conversation_history, session_state[student_id]["university_requirements"])
+    
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=800,
+        temperature=0.7
     )
+    
+    assistant_reply = response.choices[0].text.strip()
+    session_state[student_id]["conversation_history"].append({"role": "assistant", "content": assistant_reply})
+    
+    return jsonify({"message": assistant_reply})
 
-    return jsonify({"sop_draft": sop_draft}), 200
+@app.route('/get-sop-draft', methods=['GET'])
+def get_sop_draft():
+    """Generate and return the full SOP draft based on the conversation history."""
+    student_id = request.args.get("student_id")
+    
+    if student_id not in session_state:
+        return jsonify({"message": "No active SOP session found."}), 400
+    
+    conversation_history = session_state[student_id]["conversation_history"]
+    final_prompt = create_prompt(conversation_history, session_state[student_id]["university_requirements"], full_draft=True)
+    
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=final_prompt,
+        max_tokens=1500,
+        temperature=0.7
+    )
+    
+    sop_draft = response.choices[0].text.strip()
+    
+    return jsonify({"sop_draft": sop_draft})
+
+def create_prompt(conversation_history, university_requirements, full_draft=False):
+    """Generate the GPT prompt based on the conversation history and university requirements."""
+    conversation_text = "\n".join([f"{entry['role'].capitalize()}: {entry['content']}" for entry in conversation_history])
+    
+    if full_draft:
+        return f"""
+        Based on the following conversation and the university-specific requirements, generate a full Statement of Purpose (SOP):
+
+        University Requirements: {university_requirements}
+
+        Conversation:
+        {conversation_text}
+
+        Draft the SOP in a professional and structured manner with appropriate sections for introduction, academic background, professional experience, goals, and conclusion.
+        """
+    else:
+        return f"""
+        Continue this conversation for drafting a Statement of Purpose (SOP) based on the student's responses and the following university-specific requirements:
+
+        University Requirements: {university_requirements}
+
+        Conversation so far:
+        {conversation_text}
+
+        Provide the next question or generate a partial SOP draft based on the responses so far.
+        """
 
 if __name__ == '__main__':
-    app.run(port=5003, debug=True)
+    app.run(port=5002, debug=True)
 
