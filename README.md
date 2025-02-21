@@ -1,6 +1,6 @@
 # **Study Abroad AI Assistant**
 
-The **Study Abroad AI Assistant** is a microservices-based platform designed to help international students find suitable universities, prepate and manage their applications, and navigate complex visa processes. It combines AI-driven recommendations, a chatbot for Q&A, and application tracking features into a single, scalable solution.
+The **Study Abroad AI Assistant** is a microservices-based platform designed to help international students find suitable universities, prepare and manage their applications, and navigate complex visa processes. It combines AI-driven recommendations, a chatbot for Q&A, and application tracking features into a single, scalable solution.
 
 ## **Table of Contents**
 1. [Overview](#overview)  
